@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+          <div class="timer-title">
+            <h1>Pomodoro timer</h1>
+          </div>
+        <div class="circle">
+            <div class="time-left">25:00</div>
+        </div>`
+             <div class="buttons">
+                <button onclick="startTimer()">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+                <button onclick="openSettings()">Settings</button>
+            
+        </div>
+    </div>
+    </div>
+      <div class="settings-modal" id="settingsModal">
+        <button onclick="closeSettings()" class="close-button">X</button>
+        <h2>Customize Timer</h2>
+        <label for="focusTime">Focus Time (minutes):</label>
+        <input type="number" id="focusTime" value="25">
+        <label for="restTime">Rest Time (minutes):</label>
+        <input type="number" id="restTime" value="5">
+        <label for="longRestTime">Long Rest Time (minutes):</label>
+        <input type="number" id="longRestTime" value="15">
+        <button onclick="saveSettings()">Save</button>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
